@@ -85,7 +85,7 @@ if(time >=0 && time<25){
 } else if (time >=45 && time<60)
 { console.log('the fourth quarter of an hour ');
 } else {
-    console.log( `${time} wrong number. Please enter number from 0 to 59`);
+    alert( `${time} wrong number. Please enter number from 0 to 59`);
 };
 
 // - У змінній day дано якесь число від 1 до 31. Потрібно визначити, у яку половину(декаду) місяця
@@ -98,7 +98,7 @@ if(day >0 && day<11){
 } else  if (day >=21 && day<=31){
     console.log('the third decade of an month');
 } else {
-    console.log( `${day} wrong number. Please enter number from 1 to 31`);
+    alert( `${day} wrong number. Please enter number from 1 to 31`);
 };
 
 // - Скласти розклад на тиждень за домопоги switch. Користувач вводить порядковий номер дня тижня і
@@ -129,7 +129,7 @@ switch (dayOfWeek) {
         console.log('Sunday');
         break;
     default:
-        console.log(`sorry, ${dayOfWeek} there is no such day of the week`);
+        alert(`sorry, ${dayOfWeek} there is no such day of the week`);
 }
 
 //  - Користувач вводить або має два числа. Потрібно знайти та вивести максимальне число з тих двох .
