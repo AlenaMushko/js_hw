@@ -86,7 +86,7 @@ if(time >=0 && time<25){
 { console.log('the fourth quarter of an hour ');
 } else {
     alert( `${time} wrong number. Please enter number from 0 to 59`);
-};
+}
 
 // - У змінній day дано якесь число від 1 до 31. Потрібно визначити, у яку половину(декаду) місяця
 // потрапляє це число (у першу, другу чи третю).
@@ -99,7 +99,7 @@ if(day >0 && day<11){
     console.log('the third decade of an month');
 } else {
     alert( `${day} wrong number. Please enter number from 1 to 31`);
-};
+}
 
 // - Скласти розклад на тиждень за домопоги switch. Користувач вводить порядковий номер дня тижня і
 // на екрані відображається інфа що заплановано на цей день (можна замість плану на день, назву
@@ -147,7 +147,8 @@ if (isNaN(firstNumber) || isNaN(secondNumber)) {
 // - є змінна х, яка може прийняти будь-яке значення (стрінг, число, undefined, null  і тд включно).
 // Напишіть код який, за допомоги  оператора || буде присвоювати змінній х значення "default"
 // якщо значення мінної х являється falsy (хибноподібні, тобто приводиться до false)
-let xx = prompt("enter any symbols");
+// let xx = prompt("enter any symbols");
+let xx = null;
 if( xx === null || xx === '0' || xx === '' || xx === undefined  ){
     xx = "default";
 }
@@ -164,9 +165,27 @@ let coursesAndDurationArray = [
     {title: 'FullStack', monthDuration: 7},
     {title: 'Frontend', monthDuration: 4}
 ];
-
-for (let i =0; i < coursesAndDurationArray.length; i +=1){
-    if (coursesAndDurationArray[i].monthDuration > 5) {
-        console.log(coursesAndDurationArray[i].title, ' ===> supper')
+if (coursesAndDurationArray[0].monthDuration > 5) {
+   console.log(coursesAndDurationArray[0].title, ' ===> supper')
     }
+if (coursesAndDurationArray[1].monthDuration > 5) {
+    console.log(coursesAndDurationArray[1].title, ' ===> supper')
 }
+if (coursesAndDurationArray[2].monthDuration > 5) {
+    console.log(coursesAndDurationArray[2].title, ' ===> supper')
+}
+if (coursesAndDurationArray[3].monthDuration > 5) {
+    console.log(coursesAndDurationArray[3].title, ' ===> supper')
+}
+if (coursesAndDurationArray[4].monthDuration > 5) {
+    console.log(coursesAndDurationArray[4].title, ' ===> supper')
+}
+if (coursesAndDurationArray[5].monthDuration > 5) {
+    console.log(coursesAndDurationArray[5].title, ' ===> supper')
+}
+
+// for (let i =0; i < coursesAndDurationArray.length; i +=1){
+//     if (coursesAndDurationArray[i].monthDuration > 5) {
+//         console.log(coursesAndDurationArray[i].title, ' ===> supper')
+//     }
+// }
