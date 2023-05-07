@@ -1,0 +1,18 @@
+.product-card{
+    padding: 8px 24px;
+    border: 2px solid tomato;
+    border-radius: 30px;
+    text-align: center;
+    width: 70vw;
+}
+.product-card:not(:first-child){
+    margin-top: 2vw;
+}
+.product-title span{
+    margin-right: 10vw;
+    color: chocolate;
+    font-size: xx-large;
+}
+.product-image{
+    width: 40vw;
+}
