@@ -116,5 +116,5 @@ function exchange(sumUAH,currencyValues,exchangeCurrency){
             return sumUAH / currencyValue.value;
         }}
         return 'We do not have such currency, contact another bank branch';
-}
+};
 console.log('exchange 10000UAN in USD ===>', exchange(10000,[{currency:'USD',value:40},{currency:'EUR',value:42}],'USD'));
