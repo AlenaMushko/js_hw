@@ -98,7 +98,7 @@ console.log(`min number of numbers ${numbersArr} =>`, minNumber(numbersArr))
 // Приклад sum([1,2,10]) //->13
 sum=(arr)=>{
     const numbersArr = numbersOfArr (arr);
-    return arr.reduce((acc, element) => {return acc+element },0)
+    return numbersArr.reduce((acc, element) => {return acc+element },0)
 }
 let arrForSum = [1,2,10]
 console.log(`sum of ${arrForSum} =`, sum(arrForSum))
