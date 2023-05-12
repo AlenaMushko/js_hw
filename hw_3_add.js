@@ -150,7 +150,7 @@ document.write(`</ul>`)
 console.log('цикл for на 100 ітерацій з кроком 1, непарні кроки')
 document.write(`<p>цикл for на 100 ітерацій з кроком 1, непарні кроки</p><ul></ul>`)
 for (let i = 0; i < 101; i += 1) {
-    if (i % 2 !== 0) {
+    if (i%2 !== 0) {
         console.log(i);
         document.write(`<li>${i}</li>`)
     }
