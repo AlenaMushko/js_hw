@@ -68,37 +68,38 @@ console.log(users[9].password);
 //     - Є змінна х, якій ви надаєте довільне числове значення.
 //     Якщо змінна x не дорівнює нулю, виведіть 'Вірно', інакше виведіть 'Невірно'. Перевірте  скрипт при a, що дорівнює 1, 0, -3
 let x = +prompt('enter number');
-if(x !== 0){
+if (x !== 0) {
     console.log(true)
 } else {
-    console.log(false)}
+    console.log(false)
+}
 console.log(x);
 // - Дано змінну time яка рівна числу від 0 до 59. Потрібно написати код, який перевірить, до якої
 // четверті години попадає число (в першу, другу, третю или четверту частину години).
 let time = +prompt('enter number from 0 to 59');
-if(time >=0 && time<25){
+if (time >= 0 && time < 25) {
     console.log('the first quarter of an hour ');
-} else  if (time >=25 && time<30){
+} else if (time >= 25 && time < 30) {
     console.log('the second quarter of an hour ');
-} else  if (time >=30 && time<45){
+} else if (time >= 30 && time < 45) {
     console.log('the third quarter of an hour ');
-} else if (time >=45 && time<60)
-{ console.log('the fourth quarter of an hour ');
+} else if (time >= 45 && time < 60) {
+    console.log('the fourth quarter of an hour ');
 } else {
-    alert( `${time} wrong number. Please enter number from 0 to 59`);
+    alert(`${time} wrong number. Please enter number from 0 to 59`);
 }
 
 // - У змінній day дано якесь число від 1 до 31. Потрібно визначити, у яку половину(декаду) місяця
 // потрапляє це число (у першу, другу чи третю).
 let day = +prompt('enter number from 1 to 31');
-if(day >0 && day<11){
+if (day > 0 && day < 11) {
     console.log('the first decade of an month ');
-} else  if (day >=11 && day<21){
+} else if (day >= 11 && day < 21) {
     console.log('the second decade of an month ');
-} else  if (day >=21 && day<=31){
+} else if (day >= 21 && day <= 31) {
     console.log('the third decade of an month');
 } else {
-    alert( `${day} wrong number. Please enter number from 1 to 31`);
+    alert(`${day} wrong number. Please enter number from 1 to 31`);
 }
 
 // - Скласти розклад на тиждень за домопоги switch. Користувач вводить порядковий номер дня тижня і
@@ -140,7 +141,7 @@ let secondNumber = +prompt("enter second number");
 if (isNaN(firstNumber) || isNaN(secondNumber)) {
     alert("Wrong. Please, enter number");
 } else if (firstNumber === secondNumber) {
-   console.log('the numbers are equal');
+    console.log('the numbers are equal');
 } else {
     console.log(Math.max(firstNumber, secondNumber));
 }
@@ -149,7 +150,7 @@ if (isNaN(firstNumber) || isNaN(secondNumber)) {
 // якщо значення мінної х являється falsy (хибноподібні, тобто приводиться до false)
 // let xx = prompt("enter any symbols");
 let xx = null;
-if( xx === null || xx === '0' || xx === '' || xx === undefined  ){
+if (xx === null || xx === '0' || xx === '' || xx === undefined) {
     xx = "default";
 }
 console.log(xx);
@@ -166,8 +167,8 @@ let coursesAndDurationArray = [
     {title: 'Frontend', monthDuration: 4}
 ];
 if (coursesAndDurationArray[0].monthDuration > 5) {
-   console.log(coursesAndDurationArray[0].title, ' ===> supper')
-    }
+    console.log(coursesAndDurationArray[0].title, ' ===> supper')
+}
 if (coursesAndDurationArray[1].monthDuration > 5) {
     console.log(coursesAndDurationArray[1].title, ' ===> supper')
 }
