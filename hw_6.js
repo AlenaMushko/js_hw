@@ -1,13 +1,39 @@
 // - Знайти та вивести довижину настипних стрінгових значень
-// 'hello world', 'lorem ipsum', 'javascript is cool'
+const hello = 'hello world';
+const lorem ='lorem ipsum';
+const js = 'javascript is cool';
+ const stringLength = (str)=>{
+    return  str.length
+ }
 
+console.log(stringLength(hello));
+console.log(stringLength(lorem));
+console.log(stringLength(js));
 // - Перевести до великого регістру наступні стрінгові значення
-// 'hello world', 'lorem ipsum', 'javascript is cool'
-
+const stringToUpperCase = (str)=>{
+    return str.toUpperCase()
+}
+console.log(stringToUpperCase(hello));
+console.log(stringToUpperCase(lorem));
+console.log(stringToUpperCase(js))
+;
 // - Перевести до нижнього регістру настипні стрінгові значення
-// 'HELLO WORLD', 'LOREM IPSUM', 'JAVASCRIPT IS COOL'
+const hello2 = 'HELLO WORLD';
+const lorem2 ='LOREM IPSUM';
+const js2 = 'JAVASCRIPT IS COOL';
+const strToLowerCase =(str)=>{
+    return str.toLowerCase();
+}
+console.log(strToLowerCase(hello2));
+console.log(strToLowerCase(lorem2));
+console.log(strToLowerCase(js2));
 
-// - Є "брудна" стрінга let str = ' dirty string   ' . Почистити її від зайвих пробілів.
+// - Є "брудна" стрінга  . Почистити її від зайвих пробілів.
+let strDirty = ' dirty string   '
+const strTrim =(str)=>{
+    return str.trim()
+}
+console.log(strTrim(strDirty));
 
 // - Напишіть функцію stringToarray(str), яка перетворює рядок на масив слів.
  let str = 'Ревуть воли як ясла повні';
