@@ -80,7 +80,7 @@ console.log(monthDurationDescending(coursesAndDurationArray))
 const monthDurationMoreFiveMonths =(arr)=> arr.filter(value => value.monthDuration > 5)
 console.log(monthDurationMoreFiveMonths(coursesAndDurationArray))
 // -- за допомоги map перетворити кожен елемент на наступний тип {id,title,monthDuration}
-const coursesArr =(arr)=> arr.map((value, i) => { return  {id: i+1,...value, }})
+const coursesArr =(arr)=> arr.map((value, i) => { return  {...value,id: i+1 }})
 console.log(coursesArr(coursesAndDurationArray))
 // =========================
 //     описати колоду карт (від 6 до туза без джокерів)
