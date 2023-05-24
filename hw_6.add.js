@@ -1,90 +1,90 @@
-// // Всі функції повинні бути описані стрілочним типом!!!!
-// const arrNumbers = [1, 0, 3, 1, -3]
-// console.log('arrNumbers ==>', arrNumbers)
-// //  - створити функцію яка приймає три числа та виводить найменьше. (Без Math.min!)
-// const minNumber = (a, b, c) => {
-//     let minNumber = a;
-//     if (a > b) {
-//         minNumber = b;
-//     }
-//     if (b > c) {
-//         minNumber = c;
-//     }
-//     return minNumber;
-// }
-// console.log('min number of (9, 8, 0) ===>', minNumber(9, 8, 0));
-// // - створити функцію яка приймає три числа та виводить найбільше. (Без Math.max!)
-// const maxNumber = (a, b, c) => {
-//     let maxNumber = a;
-//     if (a < b) {
-//         maxNumber = b;
-//     }
-//     if (b < c) {
-//         maxNumber = c;
-//     }
-//     return maxNumber;
-// }
-// console.log('max number of (9, 8, 0) ===>', maxNumber(9, 8, 0));
-// // - створити функцію яка повертає найбільше число з масиву
-// const maxArrNumber = (arr) => Math.max(...arr);
-// console.log(`maxArrNumber of ${arrNumbers} ===>`, maxArrNumber(arrNumbers))
-// // - створити функцію яка повертає найменьше число з масиву
-// const minArrNumber = (arr) => Math.min(...arr);
-// console.log(`minArrNumber of ${arrNumbers} ===>`, minArrNumber(arrNumbers))
-// // - створити функцію яка приймає масив чисел, сумує значення елементів масиву та повертає його.
-// const sumArrNumbers = (arr) => arr.reduce((acc, number) => {
-//     return acc + number
-// }, 0)
-// console.log(`sumArrNumber of ${arrNumbers} ===>`, sumArrNumbers(arrNumbers))
-// // - Дано натуральное число n. Выведите все числа от 1 до n.
-// const factorial = (n) => {
-//     let arrFactorial = [];
-//     for (let i = 0; i <= n; i++) {
-//         arrFactorial.push(i)
-//     }
-//     return arrFactorial;
-// }
-// console.log('Дано натуральное число 7. Выведите все числа от 1 до 7===>', factorial(7))
-// // - Даны два целых числа A и В . Выведите все числа от A до B включительно, в порядке возрастания,
-// // если A < B, или в порядке убывания в противном случае.
-// const sortNumberInSegment = (a, b) => {
-//     let arr = [];
-//     if (a < b) {
-//         for (let i = a; i <= b; i++) {
-//             arr.push(i);
-//         }
-//     }
-//     ;
-//     if (a > b) {
-//         for (let i = a; i >= b; i--) {
-//             arr.push(i);
-//         }
-//     }
-//     return arr;
-// }
-// console.log('sortNumberInSegment(2, 4)', sortNumberInSegment(2, 4));
-// console.log('sortNumberInSegment(2, 4)', sortNumberInSegment(12, 4));
-// //-функція Приймає масив та число "i", та міняє місцями об`єкт який знаходиться в індексі "i"на "i+1"
-// const rearrangeNumberByIndex = (arr, index) => {
-//     [arr[index], arr[index + 1]] = [arr[index + 1], arr[index]]
-//     return arr;
-// }
-// console.log(`Приймає масив  ${arrNumbers} та число 2, та міняє місцями обєкт який знаходиться в індексі "i"на "i+1" `,
-//     rearrangeNumberByIndex(arrNumbers, 2))
-// console.log('([9,8,0,4], 0)', rearrangeNumberByIndex([9, 8, 0, 4], 0));
-// // - Сворити функцію яка буде переносити елементи з значенням 0 у кінець маисву. Зберігаючи при цьому порядок не
-// // нульових значень.  Двожина масиву від 2 до 100
-// const zeroInEndArr = (arr) => {
-//     const result = arr.reduce((acc, number) => {
-//         number ? acc.arrNum.push(number) : acc.arrZero.push(number);
-//         return acc;
-//     }, {arrNum: [], arrZero: []});
-//     return result.arrNum.concat(result.arrZero);
-// }
-// console.log('[1, 0, 6, 0, 3] ===>', zeroInEndArr([1, 0, 6, 0, 3])); //  => [1,6,3,0,0]
-// console.log('[0, 1, 2, 3, 4] ===>', zeroInEndArr([0, 1, 2, 3, 4])); //  => [1lo,2,3,4,0]
-// console.log('[0, 0, 1, 0] ===>', zeroInEndArr([0, 0, 1, 0])); //    => [1,0,0,0]
-//
+// Всі функції повинні бути описані стрілочним типом!!!!
+const arrNumbers = [1, 0, 3, 1, -3]
+console.log('arrNumbers ==>', arrNumbers)
+//  - створити функцію яка приймає три числа та виводить найменьше. (Без Math.min!)
+const minNumber = (a, b, c) => {
+    let minNumber = a;
+    if (a > b) {
+        minNumber = b;
+    }
+    if (b > c) {
+        minNumber = c;
+    }
+    return minNumber;
+}
+console.log('min number of (9, 8, 0) ===>', minNumber(9, 8, 0));
+// - створити функцію яка приймає три числа та виводить найбільше. (Без Math.max!)
+const maxNumber = (a, b, c) => {
+    let maxNumber = a;
+    if (a < b) {
+        maxNumber = b;
+    }
+    if (b < c) {
+        maxNumber = c;
+    }
+    return maxNumber;
+}
+console.log('max number of (9, 8, 0) ===>', maxNumber(9, 8, 0));
+// - створити функцію яка повертає найбільше число з масиву
+const maxArrNumber = (arr) => Math.max(...arr);
+console.log(`maxArrNumber of ${arrNumbers} ===>`, maxArrNumber(arrNumbers))
+// - створити функцію яка повертає найменьше число з масиву
+const minArrNumber = (arr) => Math.min(...arr);
+console.log(`minArrNumber of ${arrNumbers} ===>`, minArrNumber(arrNumbers))
+// - створити функцію яка приймає масив чисел, сумує значення елементів масиву та повертає його.
+const sumArrNumbers = (arr) => arr.reduce((acc, number) => {
+    return acc + number
+}, 0)
+console.log(`sumArrNumber of ${arrNumbers} ===>`, sumArrNumbers(arrNumbers))
+// - Дано натуральное число n. Выведите все числа от 1 до n.
+const factorial = (n) => {
+    let arrFactorial = [];
+    for (let i = 0; i <= n; i++) {
+        arrFactorial.push(i)
+    }
+    return arrFactorial;
+}
+console.log('Дано натуральное число 7. Выведите все числа от 1 до 7===>', factorial(7))
+// - Даны два целых числа A и В . Выведите все числа от A до B включительно, в порядке возрастания,
+// если A < B, или в порядке убывания в противном случае.
+const sortNumberInSegment = (a, b) => {
+    let arr = [];
+    if (a < b) {
+        for (let i = a; i <= b; i++) {
+            arr.push(i);
+        }
+    }
+    ;
+    if (a > b) {
+        for (let i = a; i >= b; i--) {
+            arr.push(i);
+        }
+    }
+    return arr;
+}
+console.log('sortNumberInSegment(2, 4)', sortNumberInSegment(2, 4));
+console.log('sortNumberInSegment(2, 4)', sortNumberInSegment(12, 4));
+//-функція Приймає масив та число "i", та міняє місцями об`єкт який знаходиться в індексі "i"на "i+1"
+const rearrangeNumberByIndex = (arr, index) => {
+    [arr[index], arr[index + 1]] = [arr[index + 1], arr[index]]
+    return arr;
+}
+console.log(`Приймає масив  ${arrNumbers} та число 2, та міняє місцями обєкт який знаходиться в індексі "i"на "i+1" `,
+    rearrangeNumberByIndex(arrNumbers, 2))
+console.log('([9,8,0,4], 0)', rearrangeNumberByIndex([9, 8, 0, 4], 0));
+// - Сворити функцію яка буде переносити елементи з значенням 0 у кінець маисву. Зберігаючи при цьому порядок не
+// нульових значень.  Двожина масиву від 2 до 100
+const zeroInEndArr = (arr) => {
+    const result = arr.reduce((acc, number) => {
+        number ? acc.arrNum.push(number) : acc.arrZero.push(number);
+        return acc;
+    }, {arrNum: [], arrZero: []});
+    return result.arrNum.concat(result.arrZero);
+}
+console.log('[1, 0, 6, 0, 3] ===>', zeroInEndArr([1, 0, 6, 0, 3])); //  => [1,6,3,0,0]
+console.log('[0, 1, 2, 3, 4] ===>', zeroInEndArr([0, 1, 2, 3, 4])); //  => [1lo,2,3,4,0]
+console.log('[0, 0, 1, 0] ===>', zeroInEndArr([0, 0, 1, 0])); //    => [1,0,0,0]
+
 // // ===========================================================================================================
 // - Напишите функцию , которая делит строку на подстроки, состоящие из n символов.
 const cutString = (str, n) => {
