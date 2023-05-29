@@ -99,14 +99,13 @@ class Tag {
         this.attrs = attrs;
     }
 }
-
 const a = new Tag(
     'a',
     'Тег <a>  створює посилання на іншу сторіку(Зовнішне посилання) або на певний елемент цієї сторінки(Внутрішне посилання).\n' +
     '\n',
     [
-        { titleOfAttr: 'href', actionOfAttr: 'Задає адресу документа, на який слід перейти.' },
-        { titleOfAttr: 'download', actionOfAttr: 'Пропонує завантажити вказаний за посиланням файл.' }
+        {titleOfAttr: 'href', actionOfAttr: 'Задає адресу документа, на який слід перейти.'},
+        {titleOfAttr: 'download', actionOfAttr: 'Пропонує завантажити вказаний за посиланням файл.'}
     ]
 );
 
@@ -114,7 +113,7 @@ const div = new Tag(
     'div',
     'Тег <div> представляє блочний елемент, який використовується для групування інших елементів...',
     [
-        { titleOfAttr: 'align', actionOfAttr: 'Вирівнювання вмісту тега <div>.' }
+        {titleOfAttr: 'align', actionOfAttr: 'Вирівнювання вмісту тега <div>.'}
     ]
 );
 
@@ -122,7 +121,7 @@ const h1 = new Tag(
     'h1',
     'Тег <h1> визначає найбільш важливі заголовки',
     [
-        { titleOfAttr: 'align', actionOfAttr: 'Вирівнювання заголовку.' }
+        {titleOfAttr: 'align', actionOfAttr: 'Вирівнювання заголовку.'}
     ]
 );
 
@@ -130,8 +129,8 @@ const span = new Tag(
     'span',
     'Тег <span> являє собою універсальний порожній контейнер, який необхідно заповнити будь-яким вмістом',
     [
-        { titleOfAttr: 'title', actionOfAttr: 'Вказує додаткову текстову підказку.' },
-        { titleOfAttr: 'id', actionOfAttr: 'Задає унікальний ідентифікатор для елемента.' }
+        {titleOfAttr: 'title', actionOfAttr: 'Вказує додаткову текстову підказку.'},
+        {titleOfAttr: 'id', actionOfAttr: 'Задає унікальний ідентифікатор для елемента.'}
     ]
 );
 
@@ -139,8 +138,8 @@ const input = new Tag(
     'input',
     'Тег <input> представляє елемент форми, який призначений для прийому інформації від користувача...',
     [
-        { titleOfAttr: 'type', actionOfAttr: 'Вказує тип елемента форми.' },
-        { titleOfAttr: 'value', actionOfAttr: 'Встановлює значення елемента форми.' }
+        {titleOfAttr: 'type', actionOfAttr: 'Вказує тип елемента форми.'},
+        {titleOfAttr: 'value', actionOfAttr: 'Встановлює значення елемента форми.'}
     ]
 );
 
@@ -148,26 +147,29 @@ const form = new Tag(
     'form',
     'Тег <form> використовується для створення форми на веб-сторінці...',
     [
-        { titleOfAttr: 'action', actionOfAttr: 'Вказує URL-адресу або файл, який обробляє дані форми.' },
-        { titleOfAttr: 'method', actionOfAttr: 'Вказує метод відправки форми на сервер.' }
+        {titleOfAttr: 'action', actionOfAttr: 'Вказує URL-адресу або файл, який обробляє дані форми.'},
+        {titleOfAttr: 'method', actionOfAttr: 'Вказує метод відправки форми на сервер.'}
     ]
 );
 
 const option = new Tag(
     'option',
-'Тег <option> використовується для визначення окремих пунктів списку...',
-        [
-            { titleOfAttr: 'value', actionOfAttr: 'Вказує значення пункту списку, яке буде відправлене на сервер або прочитане з допомогою скриптів.' },
-            { titleOfAttr: 'selected', actionOfAttr: 'Заздалегідь встановлює обраний пункт списку.' }
-        ]
+    'Тег <option> використовується для визначення окремих пунктів списку...',
+    [
+        {
+            titleOfAttr: 'value',
+            actionOfAttr: 'Вказує значення пункту списку, яке буде відправлене на сервер або прочитане з допомогою скриптів.'
+        },
+        {titleOfAttr: 'selected', actionOfAttr: 'Заздалегідь встановлює обраний пункт списку.'}
+    ]
 );
 
 const select = new Tag(
     'select',
     'Тег <select> використовується для створення розкривного списку...',
     [
-        { titleOfAttr: 'size', actionOfAttr: 'Вказує кількість відображуваних рядків списку.' },
-        { titleOfAttr: 'multiple', actionOfAttr: 'Дозволяє вибрати декілька пунктів списку.' }
+        {titleOfAttr: 'size', actionOfAttr: 'Вказує кількість відображуваних рядків списку.'},
+        {titleOfAttr: 'multiple', actionOfAttr: 'Дозволяє вибрати декілька пунктів списку.'}
     ]
 );
 // Таким чином описати теги
@@ -179,3 +181,27 @@ console.log(input)
 console.log(form)
 console.log(option)
 console.log(select)
+// class Tag {
+//     l
+//
+//     constructor(titleOfTag, action, ...attrs) {
+//         this.titleOfTag = titleOfTag;
+//         this.action = action;
+//         this.attrs = attrs;
+//     }
+// }
+//
+// class Attribute {
+//     constructor(titleOfAttr, actionOfAttr) {
+//         this.titleOfAttr = titleOfAttr;
+//         this.actionOfAttr = actionOfAttr;
+//     }
+// }
+//
+// const a = new Tag(
+//         'a',
+//         'Тег <a>  створює посилання на іншу сторіку(Зовнішне посилання) або на певний елемент цієї сторінки(Внутрішне посилання).\n' + '\n',
+//         new Attribute('href', 'Задає адресу документа, на який слід перейти.'),
+//         new Attribute('download', 'Пропонує завантажити вказаний за посиланням файл.')
+//     )
+// ;

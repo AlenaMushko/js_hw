@@ -5,6 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="37a735e4-3a90-43f0-90b2-80b6f1b4917d" name="Changes" comment="hw_8">
+      <change afterPath="$PROJECT_DIR$/hw_10.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hw_9.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/hw_7.add.js" beforeDir="false" afterPath="$PROJECT_DIR$/hw_7.add.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
@@ -20,19 +22,19 @@
         <option value="package.json" />
         <option value="CSS File" />
         <option value="TypeScript File" />
-        <option value="JavaScript File" />
         <option value="HTML File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;
   }
-}]]></component>
+}</component>
   <component name="GithubPullRequestsUISettings">
     <option name="selectedUrlAndAccountId">
       <UrlAndAccount>
@@ -85,6 +87,8 @@
       <workItem from="1684086242513" duration="13004000" />
       <workItem from="1684405042537" duration="6436000" />
       <workItem from="1684439061933" duration="43674000" />
+      <workItem from="1685196160462" duration="2162000" />
+      <workItem from="1685367375117" duration="7029000" />
     </task>
     <task id="LOCAL-00001" summary="init commit">
       <created>1682974102034</created>
