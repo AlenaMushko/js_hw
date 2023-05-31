@@ -45,6 +45,11 @@
 </div>
 
 <script>
+    let currentTime = new Date();
+
+    let sessions = JSON.parse(localStorage.getItem('sessions')) || [];
+    sessions.push(currentTime);
+    localStorage.setItem('sessions', JSON.stringify(sessions));
     // написати рекурсивну функцію, яка збирає всі назви класів з файлу rules.html в окремий масив. масив вивести в консоль
 </script>
 </body>
