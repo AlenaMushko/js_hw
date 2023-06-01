@@ -98,15 +98,59 @@ number.style.color = 'white';
 number.style.fontSize = '30px';
 number.style.textAlign = 'center';
 
-window.onload = function () {
-    counter++;
-    number.innerText = `${counter}`;
-    localStorage.setItem('counterNumber', JSON.stringify(counter))
-};
+// перенесла в наступне завдання, бо інакше спрацьовує лише остання window.onload
+// window.onload = function () {
+//     counter++;
+//     number.innerText = `${counter}`;
+//     localStorage.setItem('counterNumber', JSON.stringify(counter))
+// };
 
 block.append(number)
 document.body.append(block)
 document.write(`<hr>`)
+// ===>
+// *** (подібне було вище, але...будьте уважні в другій частині) створити сторінку з довільним блоком, в середині якого є значення "100грн"
+let newBlock = document.createElement('div');
+newBlock.id = 'text';
+newBlock.style.width = '100px';
+newBlock.style.height = '35px';
+newBlock.style.background = 'yellow';
+
+let counterMoney = JSON.parse(localStorage.getItem('counterMoney')) || 100;
+localStorage.setItem('counterMoney', JSON.stringify(counterMoney))
+
+let money = document.createElement('p')
+money.innerText = `${counterMoney}UAN`;
+money.style.color = 'blue';
+money.style.fontSize = '30px';
+money.style.textAlign = 'center';
+// при перезавантаженні сторінки до значаення додається по 10грн, але !!!
+// час останнього оновлення з localStorage
+const lastUpdateTime = localStorage.getItem('lastUpdateTime') || '';
+const currentTime = new Date().getTime();
+localStorage.setItem('lastUpdateTime', currentTime.toString());
+
+// Перевірити, чи пройшло 10 секунд з останнього оновлення
+const isPassedTenS = currentTime - parseInt(lastUpdateTime) >= 10000;
+//  зміна ціни відбувається тільки на перезавантаження, які відбулись пізніше ніж 10 секунд після попереднього.
+//     При перезавантаженні, яке відбулось раніше ніж минуло 10 секунд - нічого не відбувається
+window.onload = function () {
+    // для попереднього завдання
+    counter++;
+    number.innerText = `${counter}`;
+    localStorage.setItem('counterNumber', JSON.stringify(counter))
+
+    // для поточного завдання
+    if (isPassedTenS) {
+        counterMoney += 10;
+        money.innerText = `${counterMoney}UAN`;
+        localStorage.setItem('counterMoney', JSON.stringify(counterMoney));
+    }
+    localStorage.setItem('lastUpdateTime', currentTime.toString());
+};
+
+newBlock.append(money);
+document.body.append(newBlock);
 // ===>
 // Є сторінка index.html (назва довільна), при відвідуванні якої в локальне сховще, в масив sessions зберігається інформація про дату та час
 // відвідування сторінки. Є ще сторінка sessions.html (назва довільна), при відвідуванні якої потрібно відмалювати всю інформацію про
@@ -274,42 +318,6 @@ newForm.append(newInputLine, newInputNumOfCell, newInputCell, newBtn);
 newDiv.append(newForm);
 document.body.appendChild(newDiv);
 document.write(`<hr>`)
-// ===>
-// *** (подібне було вище, але...будьте уважні в другій частині) створити сторінку з довільним блоком, в середині якого є значення "100грн"
-let newBlock = document.createElement('div');
-newBlock.id = 'text';
-newBlock.style.width = '100px';
-newBlock.style.height = '35px';
-newBlock.style.background = 'yellow';
 
-let counterMoney = JSON.parse(localStorage.getItem('counterMoney')) || 100;
-localStorage.setItem('counterMoney', JSON.stringify(counterMoney))
-
-let money = document.createElement('p')
-money.innerText = `${counterMoney}UAN`;
-money.style.color = 'blue';
-money.style.fontSize = '30px';
-money.style.textAlign = 'center';
-// при перезавантаженні сторінки до значаення додається по 10грн, але !!!
-// час останнього оновлення з localStorage
-const lastUpdateTime = localStorage.getItem('lastUpdateTime') || '';
-const currentTime = new Date().getTime();
-localStorage.setItem('lastUpdateTime', currentTime.toString());
-
-// Перевірити, чи пройшло 10 секунд з останнього оновлення
-const isPassedTenS = currentTime - parseInt(lastUpdateTime) >= 10000;
-//  зміна ціни відбувається тільки на перезавантаження, які відбулись пізніше ніж 10 секунд після попереднього.
-//     При перезавантаженні, яке відбулось раніше ніж минуло 10 секунд - нічого не відбувається
-window.onload = function () {
-    if (isPassedTenS) {
-        counterMoney += 10;
-        money.innerText = `${counterMoney}UAN`;
-        localStorage.setItem('counterMoney', JSON.stringify(counterMoney));
-    };
-    localStorage.setItem('lastUpdateTime', currentTime.toString());
-};
-
-newBlock.append(money);
-document.body.append(newBlock);
 
 
