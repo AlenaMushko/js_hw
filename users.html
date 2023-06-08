@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>user</title>
+</head>
+<body>
+<ul class="user_list"></ul>
+
+<script>
+    let userId = new URL(location.href).searchParams.get('id');
+    const getUserCard = async (userId) => {
+        const baseURL = `http://jsonplaceholder.typicode.com/users/${userId}`;
+        let res = await fetch(baseURL);
+        let user = await res.json();
+        console.log('user===>', user);
+        buildUserInfo(user);
+    };
+
+    getUserCard(userId);
+
+    const buildUserInfo = (obj) => {
+        for (const key in obj) {
+            if (typeof obj[key] === 'object') {
+                buildItems(key, obj[key]);
+            } else {
+                buildList(key, obj[key]);
+            }
+        }
+    };
+
+    const buildItems = (key, value) => {
+        let title = document.createElement('h3');
+        title.textContent = `${key}`;
+        title.style.color = 'blue';
+        title.style.marginLeft = '70px';
+        document.body.append(title)
+        for (const keyObj in value) {
+            buildList(keyObj, value[keyObj], title);
+        }
+    };
+
+    const buildList = (key, value) => {
+        let userCard = document.createElement('ul');
+
+        let list = document.createElement('li');
+        list.style.listStyle = 'none';
+        list.style.display = 'flex';
+        list.style.alignItems = 'center';
+        list.style.gap = '12px';
+
+        let span = document.createElement('b');
+        span.textContent = `${key}`;
+
+        let text = document.createElement('p');
+        text.textContent = `${value}`;
+
+        list.append(span, text);
+        userCard.append(list)
+
+        document.body.appendChild(userCard);
+    };
+
+</script>
+
+
+</body>
+</html>
+
+
