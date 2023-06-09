@@ -5,7 +5,7 @@
 // (https://jsonplaceholder.typicode.com/users/XXX   ХХХ - айді користувача)
 console.log('????')
 const getUsersList = async () => {
-    const baseURL = 'https://jsonplaceholder.typicode.com/users';
+    const baseURL = 'http://jsonplaceholder.typicode.com/users';
     let res = await fetch(baseURL);
     let fetchUsers = await res.json();
     let userList = document.querySelector('.user');
