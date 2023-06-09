@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="37a735e4-3a90-43f0-90b2-80b6f1b4917d" name="Changes" comment="hw_10">
-      <change afterPath="$PROJECT_DIR$/hw_12.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/users.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+    <list default="true" id="37a735e4-3a90-43f0-90b2-80b6f1b4917d" name="Changes" comment="hw_12">
+      <change beforePath="$PROJECT_DIR$/hw_12.js" beforeDir="false" afterPath="$PROJECT_DIR$/hw_12.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,7 +87,7 @@
       <workItem from="1685196160462" duration="2162000" />
       <workItem from="1685367375117" duration="33492000" />
       <workItem from="1686233671128" duration="323000" />
-      <workItem from="1686234111850" duration="25756000" />
+      <workItem from="1686234111850" duration="26455000" />
     </task>
     <task id="LOCAL-00001" summary="init commit">
       <created>1682974102034</created>
@@ -267,7 +264,14 @@
       <option name="project" value="LOCAL" />
       <updated>1685610527697</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="hw_12">
+      <created>1686267288742</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1686267288742</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -300,7 +304,8 @@
     <MESSAGE value="hw_8" />
     <MESSAGE value="hw_9" />
     <MESSAGE value="hw_10" />
-    <option name="LAST_COMMIT_MESSAGE" value="hw_10" />
+    <MESSAGE value="hw_12" />
+    <option name="LAST_COMMIT_MESSAGE" value="hw_12" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
