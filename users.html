@@ -10,7 +10,7 @@
 <script>
     let userId = new URL(location.href).searchParams.get('id');
     const getUserCard = async (userId) => {
-        const baseURL = `http://jsonplaceholder.typicode.com/users/${userId}`;
+        const baseURL = `https://jsonplaceholder.typicode.com/users/${userId}`;
         let res = await fetch(baseURL);
         let user = await res.json();
         console.log('user===>', user);
