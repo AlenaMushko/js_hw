@@ -22,23 +22,27 @@
 
     const buildUserInfo = (obj) => {
         for (const key in obj) {
-            if (typeof obj[key] === 'object') {
-                buildItems(key, obj[key]);
-            } else {
-                buildList(key, obj[key]);
+            const useValue = obj[key];
+            const foo = (key, value) =>{
+                if (typeof value === 'object') {
+                    buildItems(key);
+                    for (const subKey in value) {
+                        foo(subKey, value[subKey]);
+                    }
+                } else {
+                    buildList(key, value);
+                }
             }
+          foo(key,useValue)
         }
     };
 
-    const buildItems = (key, value) => {
+    const buildItems = (key) => {
         let title = document.createElement('h3');
         title.textContent = `${key}`;
         title.style.color = 'blue';
         title.style.marginLeft = '70px';
-        document.body.append(title)
-        for (const keyObj in value) {
-            buildList(keyObj, value[keyObj], title);
-        }
+        document.body.appendChild(title)
     };
 
     const buildList = (key, value) => {
