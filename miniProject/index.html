@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Users</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,600;1,900&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+<section class="container">
+    <h1 class="title"> Users of our products</h1>
+</section>
+
+<script>
+    const getUsersList = async () => {
+        const baseURL = 'http://jsonplaceholder.typicode.com/users';
+        const res = await fetch(baseURL);
+        const fetchUsers = await res.json();
+        const usersList = document.createElement('ul');
+        usersList.classList.add('users_list');
+
+        fetchUsers.forEach(user => {
+            const aboutUserURL = `user-details.html?id=${user.id}`;
+            const item = document.createElement('li');
+
+            const userName = document.createElement('h3');
+            userName.textContent = `${user.id}) ${user.name}`;
+            userName.classList.add('users_title')
+
+            const btn = document.createElement('button');
+            btn.type = 'button';
+            btn.classList.add('users_btn')
+            btn.textContent = 'more info';
+
+            btn.addEventListener('click', () => {
+                window.location.href = aboutUserURL;
+            });
+
+            item.append(userName, btn);
+            usersList.appendChild(item);
+        });
+        const container = document.querySelector('.container');
+        container.appendChild(usersList);
+    };
+
+    getUsersList();
+
+</script>
+
+</body>
+</html>
