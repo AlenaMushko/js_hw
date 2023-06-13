@@ -186,7 +186,7 @@ button:focus {
     box-shadow: var(--shadows-medium);
 }
 
-.post_item:not(last-child) {
+.post_item:not(:last-child) {
     margin-bottom: 12px;
 }
 
