@@ -1,23 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
-    <title>user-details</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,600;1,900&display=swap"
-          rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-
-<section class="container">
-    <h2 class="title"> Detailed information about user</h2>
-    <ul class="card"></ul>
-</section>
-
-<script>const userId = new URL(location.href).searchParams.get('id');
+const userId = new URL(location.href).searchParams.get('id');
 
 const container = document.querySelector('.container');
 const userCard = document.querySelector('.card');
@@ -147,12 +128,3 @@ const showPostTitles = (posts) => {
 };
 
 getPosts(userId)
-
-</script>
-
-<!--<script src="userDetails.js" type="module"></script>-->
-</body>
-</html>
-
-
-<!--блоки з короткою іфною про post - в ряд по 5 .-->
