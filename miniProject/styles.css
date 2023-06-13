@@ -99,9 +99,13 @@ button:focus {
 }
 
 .users_title {
+    width: 90%;
     font-weight: 600;
     font-size: 20px;
     letter-spacing: 3px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 .users_btn {
@@ -152,7 +156,7 @@ button:focus {
     flex-wrap: wrap;
 }
 
-.curd_title {
+.card_titleß {
     font-style: italic;
     font-weight: 900;
     font-size: 24px;
