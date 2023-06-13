@@ -38,7 +38,7 @@ const showPostTitles = async (posts) => {
         postsText.textContent = post.title;
 
         const postsLink = document.createElement('a');
-        const postDetailsURL = `miniProject/post-details.html?id=${post.id}`;
+        const postDetailsURL = `../userPosts/post-details.html?id=${post.id}`;
         postsLink.href = postDetailsURL;
 
         const icon = document.createElementNS('http://www.w3.org/2000/svg', 'svg');

@@ -1,6 +1,8 @@
 
 const baseURL = 'http://jsonplaceholder.typicode.com/users';
 
+const basePostURL = 'https://jsonplaceholder.typicode.com/posts';
+
 export const fetchAllUsers = async ()=>{
     try{
         const res = await fetch(baseURL);
@@ -27,4 +29,11 @@ export const fetchPosts = async (id) => {
     const res = await fetch(postsURL);
     const posts = await res.json();
   return posts;
+};
+
+export const fetchPostById = async (id) => {
+    const postURL = `${basePostURL}/${id}`;
+    const res = await fetch(postURL);
+    const post = await res.json();
+    return post;
 };

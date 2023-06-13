@@ -156,7 +156,7 @@ button:focus {
     flex-wrap: wrap;
 }
 
-.card_titleß {
+.card_title {
     font-style: italic;
     font-weight: 900;
     font-size: 24px;
@@ -216,3 +216,11 @@ button:focus {
 
 /*====================  post-details.html  ============*/
 
+.post_title{
+    font-style: italic;
+    font-weight: 600;
+    font-size: 24px;
+    letter-spacing: 4px;
+    text-align: center;
+    color: var(--curd-title-color);
+}
