@@ -1,6 +1,5 @@
 
-
-const buildUserInfo = (obj, parent) => {
+export const buildUserInfo = (obj, parent) => {
     for (const key in obj) {
         const userValue = obj[key];
         if (typeof userValue === 'object') {
@@ -46,32 +45,3 @@ const curdItemBuilder = (key, value, parent) => {
     parent.appendChild(curdItem);
 };
 
-let isPostVisible = false;
-
-const getPosts = async (userId) => {
-    const baseURL = `https://jsonplaceholder.typicode.com/users/${userId}/posts`;
-    const res = await fetch(baseURL);
-    const posts = await res.json();
-    buildPostList(posts);
-};
-
-const postsBox = document.createElement('div');
-postsBox.classList.add('posts_box');
-
-const buildPostList = (posts) => {
-    const postBtn = document.createElement('button');
-    postBtn.classList.add('curd_btn');
-    postBtn.type = 'button';
-    postBtn.textContent = 'Post of user';
-
-    postBtn.addEventListener('click', async () => {
-        if (!isPostVisible) {
-            await showPostTitles(posts);
-            isPostVisible = true;
-        } else {
-            isPostVisible = false;
-            postsBox.innerHTML = '';
-        }
-    });
-    document.body.append(postBtn, postsBox);
-};

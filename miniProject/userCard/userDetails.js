@@ -1,5 +1,8 @@
-import {fetchUserById} from "./fetch.js";
-import {mainContainer} from "./container.js";
+import {fetchUserById} from "../fetch.js";
+import {mainContainer} from "../container.js";
+import {buildUserInfo} from "./buildObj.js";
+import {fetchPosts} from "../fetch.js";
+import {buildPostList} from "./showPostTitles.js";
 
 const userId = new URL(location.href).searchParams.get('id');
 
@@ -7,7 +10,7 @@ const container = mainContainer();
 const userCard = document.createElement('ul');
 userCard.classList.add('card');
 
-const title= document.createElement('h2');
+const title = document.createElement('h2');
 title.classList.add('title');
 title.textContent = 'Detailed information about user';
 
@@ -20,8 +23,21 @@ const getUserCard = async () => {
     } catch (err) {
         userCard.innerHTML = '<h3 class="card_title">The information about this user has not yet been filled in, come back later</h3>'
     }
-}
-    getUserCard(userId);
+};
 
-<!--блоки з короткою іфною про post - в ряд по 5 .-->
+getUserCard(userId);
+
+const getUserPosts = async () => {
+    const posts = await fetchPosts(userId);
+    try {
+        buildPostList(posts);
+    } catch (err) {
+        userCard.innerHTML = '';
+    }
+};
+
+getUserPosts();
+
+
+
 

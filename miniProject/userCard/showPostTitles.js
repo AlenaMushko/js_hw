@@ -1,3 +1,28 @@
+// блоки з короткою іфною про post - в ряд по 5 .
+
+let isPostVisible = false;
+
+const postsBox = document.createElement('div');
+postsBox.classList.add('posts_box');
+
+export const buildPostList = (posts) => {
+    const postBtn = document.createElement('button');
+    postBtn.classList.add('curd_btn');
+    postBtn.type = 'button';
+    postBtn.textContent = 'Post of user';
+
+    postBtn.addEventListener('click', async () => {
+        if (!isPostVisible) {
+            await showPostTitles(posts);
+            isPostVisible = true;
+        } else {
+            isPostVisible = false;
+            postsBox.innerHTML = '';
+        }
+    });
+    document.body.append(postBtn, postsBox);
+};
+
 
 
 const showPostTitles = async (posts) => {

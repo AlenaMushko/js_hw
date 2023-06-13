@@ -5,20 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="37a735e4-3a90-43f0-90b2-80b6f1b4917d" name="Changes" comment="post">
-      <change afterPath="$PROJECT_DIR$/miniProject/buildObj.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/miniProject/container.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/miniProject/fetch.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/miniProject/showPostTitles.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/miniProject/buildList.js" beforeDir="false" afterPath="$PROJECT_DIR$/miniProject/usersList/buildList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/miniProject/buildObj.js" beforeDir="false" afterPath="$PROJECT_DIR$/miniProject/userCard/buildObj.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/miniProject/fetch.js" beforeDir="false" afterPath="$PROJECT_DIR$/miniProject/fetch.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/miniProject/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/miniProject/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/miniProject/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/miniProject/objList.js" beforeDir="false" afterPath="$PROJECT_DIR$/miniProject/buildList.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/miniProject/runHTML.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/miniProject/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/miniProject/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/miniProject/user-details.html" beforeDir="false" afterPath="$PROJECT_DIR$/miniProject/user-details.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/miniProject/userDetails.js" beforeDir="false" afterPath="$PROJECT_DIR$/miniProject/userDetails.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/miniProject/usersList.js" beforeDir="false" afterPath="$PROJECT_DIR$/miniProject/usersList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/miniProject/objDisclosure.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/miniProject/post-details.html" beforeDir="false" afterPath="$PROJECT_DIR$/miniProject/post-details.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/miniProject/showPostTitles.js" beforeDir="false" afterPath="$PROJECT_DIR$/miniProject/userCard/showPostTitles.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/miniProject/user-details.html" beforeDir="false" afterPath="$PROJECT_DIR$/miniProject/userCard/user-details.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/miniProject/userDetails.js" beforeDir="false" afterPath="$PROJECT_DIR$/miniProject/userCard/userDetails.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/miniProject/usersList.js" beforeDir="false" afterPath="$PROJECT_DIR$/miniProject/usersList/usersList.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,6 +84,12 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/miniProject/userCard" />
+      <recent name="$PROJECT_DIR$/miniProject/usersList" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -106,7 +110,7 @@
       <workItem from="1686234111850" duration="30780000" />
       <workItem from="1686352091563" duration="5222000" />
       <workItem from="1686495839075" duration="597000" />
-      <workItem from="1686561418788" duration="52990000" />
+      <workItem from="1686561418788" duration="55032000" />
     </task>
     <task id="LOCAL-00001" summary="init commit">
       <created>1682974102034</created>
@@ -381,7 +385,14 @@
       <option name="project" value="LOCAL" />
       <updated>1686680581408</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="post">
+      <created>1686691501781</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1686691501781</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

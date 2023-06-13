@@ -22,8 +22,9 @@ export const fetchUserById = async (id)=>{
    }
 };
 
-//
-// export const fetchPosts = ()=>{
-//
-// };
-
+export const fetchPosts = async (id) => {
+    const postsURL = `${baseURL}/${id}/posts`;
+    const res = await fetch(postsURL);
+    const posts = await res.json();
+  return posts;
+};
