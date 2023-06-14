@@ -163,20 +163,25 @@ button:focus {
     width: 90vw;
 }
 
+.posts_box{
+    width: 97vw;
+}
+
 .post_list{
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-gap: 3%;
+    width: 95vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .post_item {
-    width: 17.6%;
+    width: calc( 100% / 5 - 3vw);
+
     padding: 4px;
     display: flex;
     gap: 32px;
-    font-weight: 600;
-    font-size: 24px;
+    font-weight: 400;
+    font-size: 12px;
     letter-spacing: 4px;
     color: var(--title-color);
     background-color: var(--background-hover-color);
@@ -198,8 +203,8 @@ button:focus {
 .post_text {
     overflow: hidden;
     text-overflow: ellipsis;
-    white-space: nowrap;
-    width: 70%;
+    white-space: normal;
+    /*white-space: nowrap;*/
 }
 
 .icon {

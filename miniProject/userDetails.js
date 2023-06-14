@@ -126,19 +126,23 @@ function buildPostList(posts){
 };
 
 const showPostTitles = async (posts) => {
-    // const userWrap = document.createElement('div');
-    // userWrap.classList.add('user_wrap');
 
     const postsList = document.createElement('ul');
     postsList.classList.add('post_list');
 
     for (const post of posts) {
+        let postText = post.title;
+
+        if(postText.length > 35){
+            postText = postText.substring(0, 35) + "...";
+        };
+
         const postsItem = document.createElement('li');
         postsItem.classList.add('post_item');
 
         const postsText = document.createElement('p');
         postsText.classList.add('post_text');
-        postsText.textContent = post.title;
+        postsText.textContent = postText;
 
         const postsLink = document.createElement('a');
         const postDetailsURL = `/js_hw/miniProject/post-details.html?id=${post.id}`;
@@ -159,7 +163,6 @@ const showPostTitles = async (posts) => {
 
         postsItem.append(postsText, postsLink);
         postsList.appendChild(postsItem);
-        // userWrap.appendChild(postsList);
     }
 
     postsBox.innerHTML = '';
