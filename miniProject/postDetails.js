@@ -9,9 +9,9 @@ document.body.appendChild(container);
 const postCard = document.createElement('div');
 postCard.classList.add('card');
 
-const commentsList = document.createElement('div');
-commentsList.classList.add('card');
-commentsList.classList.add('card_comments');
+const commentsWraper = document.createElement('div');
+commentsWraper.classList.add('card');
+commentsWraper.classList.add('card_comments');
 
 const getUserPost = async () => {
     const post = await fetchPostById(userId, container);
@@ -24,10 +24,11 @@ const getUserPost = async () => {
         title.classList.add('post_user');
         title.textContent = `${currentUser.username} - post № ${post.id}`;
 
-        container.append(title, postCard, commentsList);
+        container.append(title, postCard);
         buildPostCurd(post, postCard);
         if (comments) {
-            buildCommentsList(comments, commentsList);
+            document.body.appendChild(commentsWraper);
+            buildCommentsList(comments, commentsWraper);
         }
     } catch (err) {
         postCard.innerHTML = '';
@@ -102,6 +103,7 @@ function buildCommentsList(arr, parent) {
         const newBody = firstLetter.concat(comment.body.slice(1));
 
         const commentItem = document.createElement('li');
+        commentItem.classList.add('comment_item');
 
         const commentTitle = document.createElement('h4');
         commentTitle.classList.add('post_title');

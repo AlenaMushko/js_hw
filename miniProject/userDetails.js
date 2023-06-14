@@ -65,7 +65,7 @@ function buildUserInfo(obj, parent){
             curdItemBuilder(key, userValue, parent);
         }
     }
-};
+}
 
 const curdListBuilder = (key, objValue, parent) => {
     const curdList = document.createElement('ul');
@@ -123,7 +123,7 @@ function buildPostList(posts){
         }
     });
     document.body.append(postBtn, postsBox);
-};
+}
 
 const showPostTitles = async (posts) => {
 
@@ -135,7 +135,7 @@ const showPostTitles = async (posts) => {
 
         if(postText.length > 35){
             postText = postText.substring(0, 35) + "...";
-        };
+        }
 
         const postsItem = document.createElement('li');
         postsItem.classList.add('post_item');
