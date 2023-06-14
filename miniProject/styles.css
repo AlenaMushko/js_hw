@@ -35,16 +35,6 @@ ul {
     padding: 0;
 }
 
-/*address {*/
-/*    font-style: normal;*/
-/*}*/
-
-/*img {*/
-/*    display: block;*/
-/*    max-width: 100%;*/
-/*    height: auto;*/
-/*}*/
-
 li {
     list-style: none;
 }
@@ -119,6 +109,7 @@ button:focus {
     gap: 12px;
 }
 /*====================  user-details.html  ============*/
+
 .card {
     margin-top: 32px;
     display: flex;
@@ -149,7 +140,9 @@ button:focus {
     font-weight: 600;
     font-size: 16px;
     letter-spacing: 3px;
+    line-height: 30px;
     color: var(--text-color);
+    text-indent: 32px;
 }
 
 .wrapper {
@@ -170,7 +163,15 @@ button:focus {
     width: 90vw;
 }
 
+.post_list{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 3%;
+}
+
 .post_item {
+    width: 17.6%;
     padding: 4px;
     display: flex;
     gap: 32px;
@@ -215,12 +216,37 @@ button:focus {
 }
 
 /*====================  post-details.html  ============*/
+.post_user{
+    font-weight: 600;
+}
 
 .post_title{
-    font-style: italic;
     font-weight: 600;
-    font-size: 24px;
-    letter-spacing: 4px;
-    text-align: center;
+    font-size: 22px;
+    letter-spacing: 3px;
     color: var(--curd-title-color);
+    text-align: center;
+}
+
+.comments_list{
+    display: grid;
+    /*grid-template-columns: 1fr 1fr;*/
+    grid-gap: 16px;
+}
+
+.comment_title{
+    font-weight: 400;
+    color: var(--text-color);
+}
+
+.comment_afterTitle{
+
+    display: inline-block;
+    margin-top: 8px;
+    border-bottom: 2px solid var(--background-color);
+}
+
+.comment_text{
+    margin-top: 8px;
+    font-weight: 400;
 }

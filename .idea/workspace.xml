@@ -5,13 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="37a735e4-3a90-43f0-90b2-80b6f1b4917d" name="Changes" comment="post">
-      <change afterPath="$PROJECT_DIR$/miniProject/userPosts/buildPostCurd.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/miniProject/userPosts/postDetails.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/miniProject/fetch.js" beforeDir="false" afterPath="$PROJECT_DIR$/miniProject/fetch.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/miniProject/container.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/miniProject/fetch.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/miniProject/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/miniProject/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/miniProject/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/miniProject/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/miniProject/userCard/showPostTitles.js" beforeDir="false" afterPath="$PROJECT_DIR$/miniProject/userCard/showPostTitles.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/miniProject/userPosts/post-details.html" beforeDir="false" afterPath="$PROJECT_DIR$/miniProject/userPosts/post-details.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/miniProject/userCard/buildObj.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/miniProject/userCard/showPostTitles.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/miniProject/userCard/user-details.html" beforeDir="false" afterPath="$PROJECT_DIR$/miniProject/user-details.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/miniProject/userCard/userDetails.js" beforeDir="false" afterPath="$PROJECT_DIR$/miniProject/userDetails.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/miniProject/userPosts/buildPostCurd.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/miniProject/userPosts/post-details.html" beforeDir="false" afterPath="$PROJECT_DIR$/miniProject/post-details.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/miniProject/userPosts/postDetails.js" beforeDir="false" afterPath="$PROJECT_DIR$/miniProject/postDetails.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/miniProject/usersList/buildList.js" beforeDir="false" afterPath="$PROJECT_DIR$/miniProject/usersList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/miniProject/usersList/usersList.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,6 +89,7 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/miniProject" />
       <recent name="$PROJECT_DIR$/miniProject/userPosts" />
       <recent name="$PROJECT_DIR$/miniProject/userCard" />
       <recent name="$PROJECT_DIR$/miniProject/usersList" />
@@ -106,7 +115,10 @@
       <workItem from="1686234111850" duration="30780000" />
       <workItem from="1686352091563" duration="5222000" />
       <workItem from="1686495839075" duration="597000" />
-      <workItem from="1686561418788" duration="58964000" />
+      <workItem from="1686561418788" duration="64419000" />
+      <workItem from="1686758690655" duration="15000" />
+      <workItem from="1686758737678" duration="1907000" />
+      <workItem from="1686760981758" duration="10565000" />
     </task>
     <task id="LOCAL-00001" summary="init commit">
       <created>1682974102034</created>
@@ -395,7 +407,14 @@
       <option name="project" value="LOCAL" />
       <updated>1686693612751</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="post">
+      <created>1686697592699</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1686697592699</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
